@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+
 import Aboutus from "./Components/Aboutus"; // ✅ Fixed path
 
 function App() {
