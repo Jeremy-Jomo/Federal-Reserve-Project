@@ -57,7 +57,7 @@ function Criminals({ items }) {
                   }}
                 />
                 <p>
-                  Charges : <strong>{item.subjects}</strong>
+                  Crime : <strong>{item.subjects}</strong>
                 </p>
                 <p id="date">Published: {item.publication}</p>
                 <div>
