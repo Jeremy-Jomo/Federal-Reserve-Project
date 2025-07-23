@@ -5,6 +5,12 @@ import './LoginPage.css';
 
 function LoginPage() {
 
+  function handleLogin(event) {
+    event.preventDefault();
+    // Handle login logic here
+    console.log('Login submitted');
+  }
+
 
 
   return (
@@ -23,7 +29,7 @@ function LoginPage() {
 
           />
 
-          <form className="login-form" >
+          <form className="login-form" onSubmit={handleLogin} >
             <div className="mb-3">
               <label htmlFor="username" className="form-label">Username:</label>
               <input type="text" className="form-control" id="username" required />
