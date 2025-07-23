@@ -25,7 +25,7 @@ function Criminals({ items }) {
                   name="field offices"
                   id="field-offices"
                 >
-                  <option value="">Select a Field Office</option>
+                  <option value="">All Field Offices</option>
                   {uniqueFieldOffices.map((office, index) => (
                     <option key={index} value={office}>
                       {office}
