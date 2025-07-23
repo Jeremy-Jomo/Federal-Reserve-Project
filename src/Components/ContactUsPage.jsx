@@ -4,7 +4,7 @@ export default function ContactUs() {
   return (
     <div className="contact-container">
       <div className="emergency-banner">
-        Emergency? Dial 911 or contact your nearest law enforcement office.
+        Emergency? Dial 911 or contact/visit your nearest law enforcement office.
       </div>
 
       <h1 className="contact-title">Contact the National Investigation Agency</h1>
@@ -22,7 +22,7 @@ export default function ContactUs() {
           <h2>Scams & Fraud</h2>
           <ul>
             <li><a href="#">Report a scam</a></li>
-            <li>Email: fraud@nia.gov</li>
+            <li>Email: fraudstar@here.gov</li>
           </ul>
         </div>
 
