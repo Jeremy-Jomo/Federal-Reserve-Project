@@ -5,14 +5,6 @@
   color: #1a1a1a;
 }
 
-.emergency-banner {
-  background-color: #b91c1c;
-  color: #fff;
-  padding: 12px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .contact-title {
   text-align: center;
@@ -63,4 +55,13 @@
   background-color: #1e3a8a;
   color: white;
   border-top: 4px solid #2563eb;
+}
+
+.emergency-banner {
+  background-color: #b91c1c;
+  color: #fff;
+  padding: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
 }
