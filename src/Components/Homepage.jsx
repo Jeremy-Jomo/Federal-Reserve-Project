@@ -12,8 +12,12 @@ function Homepage() {
         </ul>
       </nav>
 
-     
-    </div>
+       <div className="content">
+        <h1>Welcome to the Federal Reserve Watchlist</h1>
+        <p>This site provides information on individuals monitored by the FBI. More information about Bounty Rewards and Useful Information of wanted criminals is also provided below.
+        AMA NAMNA GANI MY FRIEND! </p>
+        </div>
+</div>
   );
 }
 
