@@ -3,11 +3,11 @@ import './LoginPage.css';
 
 
 
-function LoginPage() {
+function LoginPage({onSubmit}) {
 
   function handleLogin(event) {
     event.preventDefault();
-    // Handle login logic here
+    onSubmit(event);
     console.log('Login submitted');
   }
 
@@ -17,7 +17,7 @@ function LoginPage() {
     <>
 
 
-
+    <div className="login-background">
       <div className="d-flex justify-content-center align-items-center vh-100">
         <div className="card p-4" >
           <h1 className="text-center mb-4 p-3 ">Login</h1>
@@ -46,6 +46,9 @@ function LoginPage() {
           </div>
         </div>
       </div>
+
+    </div>
+
     </>
   );
 }
