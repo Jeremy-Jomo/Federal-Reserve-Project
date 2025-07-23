@@ -17,7 +17,7 @@ function Criminals({ items }) {
                 <input
                   type="search"
                   id="inputfield"
-                  placeholder="Search by name or crime"
+                  placeholder="Search by Name or Crime"
                 />
               </div>
               <div>
