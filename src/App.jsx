@@ -1,24 +1,25 @@
 
 import React from 'react';
 import LoginPage from './Components/LoginPage/LoginPage';
+import ContactUs from './Components/ContactUsPage';
+import Homepage from './Components/Homepage';
 
 
 
 
 function App() {
 
-  function onSubmit(event) {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted');
-  }
+
 
 
   return (
     <div>
-      {/* Add your content here */}
-      <h1>Federal Reserve App</h1>
-      <LoginPage onSubmit={onSubmit} />
+
+      <LoginPage  />
+      <ContactUs />
+      <Homepage />
+
+
     </div>
   )
 }
