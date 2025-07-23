@@ -4,13 +4,17 @@ import './LoginPage.css';
 
 
 function LoginPage() {
+
+
+
   return (
     <>
 
 
+
       <div className="d-flex justify-content-center align-items-center vh-100">
         <div className="card p-4" >
-          <h1 className="text-center mb-4 p-3">Login</h1>
+          <h1 className="text-center mb-4 p-3 ">Login</h1>
           <h1 className="text-center mb-4"> FBI MOST WANTED</h1>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/9f/FBISeal.png"
@@ -19,7 +23,7 @@ function LoginPage() {
 
           />
 
-          <form className="login-form">
+          <form className="login-form" >
             <div className="mb-3">
               <label htmlFor="username" className="form-label">Username:</label>
               <input type="text" className="form-control" id="username" required />
