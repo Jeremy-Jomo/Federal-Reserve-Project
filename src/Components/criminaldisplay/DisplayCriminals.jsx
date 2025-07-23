@@ -44,7 +44,7 @@ function Criminals({ items }) {
       </div>
 
       <div className="fade-in">
-        <h1>FEDERAL RECORDS</h1>
+        <h1>FEDERAL BUREAUOF INVESTIGATION RECORDS</h1>
         <div className="card-container">
           {items.map((item, index) => (
               <div key={index} className="cards ">
