@@ -36,7 +36,7 @@ function Criminals({ items }) {
             </div>
             <div>
               <p>
-                Showing {items.length} of {items.length} cases
+                Showing {items.length} of {items.length} Federal cases 
               </p>
             </div>
           </div>
