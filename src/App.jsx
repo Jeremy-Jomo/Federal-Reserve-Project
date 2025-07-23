@@ -1,6 +1,7 @@
+// src/App.jsx
 import React from "react";
-
-import Aboutus from "./Components/Aboutus"; // ✅ Fixed path
+import "./App.css";
+import Aboutus from "./Components/Aboutus";
 
 function App() {
   return (
