@@ -1,15 +1,17 @@
 import React from 'react';
-import './Homepage.css';
+import { Link, Outlet } from 'react-router-dom';
 
-function Homepage() {
+import './Homepage.css';
+function Home() {
   return (
     <>
       <div id="homepage">
         <nav id="navbar">
           <ul>
-            <li><a href="#criminals">Criminals</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#about">About Us</a></li>
+          <li><Link to="/contactus">ContactUs</Link></li>
+          <li><Link to="/criminals">Wanted List</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+
           </ul>
         </nav>
 
@@ -18,6 +20,10 @@ function Homepage() {
           <p>This site provides information on individuals monitored by the FBI. More information about Bounty Rewards and Useful Information of wanted criminals is also provided below.
           AMA NAMNA GANI MY FRIEND! </p>
         </div>
+
+      <main>
+        <Outlet />
+      </main>
 
         <div id="fbi-images">
           <img src="https://logos-world.net/wp-content/uploads/2021/08/FBI-Logo.png"  alt="FBI Seal" />
@@ -31,4 +37,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Home;

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../App.css";
 
-const Aboutus = () => {
+const AboutUs = () => {
   const [showMission, setShowMission] = useState(false);
   const [team] = useState([
     { name: "Angela", role: "About Us Developer" },
@@ -49,4 +49,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;
