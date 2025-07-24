@@ -115,7 +115,7 @@ open browser and go to [text](http://localhost:5173)
 2. Upon successful login, the app redirects to the Home Page.
 ## 🖼️ Project Preview
 
-![Federal Reserve Watchlist Homepage](image-1.png)
+![Federal Reserve Watchlist Homepage](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-21-15.png)
 
 
 
@@ -125,15 +125,15 @@ open browser and go to [text](http://localhost:5173)
 🔍 /criminals – View list of wanted individuals
 
 
->🧾 /details/:id – View detailed info for each
+🧾 /details/:id – View detailed info for each
 
 ![Criminal page](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-09.png)
 
->📄 /about – About this platform
+📄 /about – About this platform
 
 ![About us page](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-30.png)
 
->📬 /contactus – Contact support or admin
+📬 /contactus – Contact support or admin
 ![Contact us](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-30.png)
 
 ⚙️ Route Protection Logic
