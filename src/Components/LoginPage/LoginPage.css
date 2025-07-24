@@ -18,7 +18,12 @@
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
+<<<<<<< HEAD
 .login-background {
+=======
+
+.wrapper {
+>>>>>>> origin/main
   background-image: url('https://www.fbi.gov/image-repository/cybersecurity-large.jpg/@@images/image/high');
   background-size: cover;
   background-position: center;
