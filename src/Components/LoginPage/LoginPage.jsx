@@ -3,17 +3,18 @@ import './LoginPage.css';
 
 
 
-function LoginPage() {
+function LoginPage({onSubmit}) {
 
   function handleLogin(event) {
     event.preventDefault();
-    // Handle login logic here
+    onSubmit(event);
     console.log('Login submitted');
   }
 
 
 
   return (
+
     <div className='wrapper'>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <div className="card p-4" >
@@ -26,7 +27,7 @@ function LoginPage() {
 
           />
 
-          <form className="login-form" onSubmit={handleLogin} >
+          <form className="login-form" onSubmit={handleLogin}>
             <div className="mb-3">
               <label htmlFor="username" className="form-label">Username:</label>
               <input type="text" className="form-control" id="username" required />
@@ -43,7 +44,9 @@ function LoginPage() {
           </div>
         </div>
       </div>
+
     </div>
+
   );
 }
 export default LoginPage;

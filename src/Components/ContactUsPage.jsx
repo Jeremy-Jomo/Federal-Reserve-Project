@@ -43,9 +43,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <footer className="contact-footer">
-        <p>© 2025 National Investigation Agency. All rights reserved.</p>
-      </footer>
+
     </div>
   );
 }
