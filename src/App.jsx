@@ -13,9 +13,10 @@ function App() {
     <div>
 
       {/* <LoginPage  /> */}
+    {/* <Home /> */}
     <Routes>
-      <Route >
-        <Route index element={<Home />} />
+      <Route path='/' element={<Home />}>
+        {/* <Route path='/' element={<Home />} /> */}
         <Route path="criminals" element={<CriminalsDisplay />} />
         <Route path="details/:id" element={<Details />} />
         <Route path="about" element={<AboutUs />} />
