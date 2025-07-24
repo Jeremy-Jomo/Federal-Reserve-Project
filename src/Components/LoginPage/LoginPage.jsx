@@ -27,7 +27,7 @@ function LoginPage({onSubmit}) {
 
           />
 
-          <form className="login-form" onSubmit={handleLogin} >
+          <form className="login-form" onSubmit={handleLogin}>
             <div className="mb-3">
               <label htmlFor="username" className="form-label">Username:</label>
               <input type="text" className="form-control" id="username" required />
