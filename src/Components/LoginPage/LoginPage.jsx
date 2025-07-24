@@ -14,10 +14,7 @@ function LoginPage() {
 
 
   return (
-    <>
-
-
-
+    <div className='wrapper'>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <div className="card p-4" >
           <h1 className="text-center mb-4 p-3 ">Login</h1>
@@ -46,7 +43,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default LoginPage;
