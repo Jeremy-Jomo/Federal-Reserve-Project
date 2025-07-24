@@ -1,59 +1,87 @@
+/* Base container styling */
 .contact-container {
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
-  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e7eb;
+  padding: 40px 20px;
   color: #1a1a1a;
 }
 
+/* Title styling */
 .contact-title {
   text-align: center;
-  color: #1e3a8a;
-  font-size: 28px;
-  margin-bottom: 24px;
+  color: #0f172a; /* Deep slate */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Grid layout */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
+/* Card styling */
 .contact-card {
-  background-color: #fff;
-  border-left: 6px solid #1e3a8a;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  border-left: 6px solid #1e40af; /* Deep blue */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading inside card */
 .contact-card h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #1e3a8a;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1e40af;
+  text-transform: uppercase;
 }
 
+/* Bullet points list */
 .contact-card ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-card ul li::before {
+  content: "▶";
+  color: #1e40af;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .contact-card a {
   color: #2563eb;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .contact-card a:hover {
   text-decoration: underline;
+  color: #1d4ed8;
 }
 
-
-
+/* Emergency banner */
 .emergency-banner {
   background-color: #b91c1c;
   color: #fff;
-  padding: 12px;
-  font-weight: 600;
+  padding: 16px;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
