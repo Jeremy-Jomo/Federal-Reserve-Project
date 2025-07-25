@@ -97,6 +97,12 @@ function Details() {
         <span style={labelStyle}>Hair Color:</span>{" "}
         {person.hair || "Unknown"}
       </p>
+      <p>
+        <span style={labelStyle}>Race:</span>{" "}
+        {person.race || "Unknown"}
+      </p>
+
+
 
       <p>
         <span style={labelStyle}>Scars & Marks:</span>{" "}
