@@ -7,11 +7,11 @@ function Home() {
     <>
       <div id="homepage">
         <nav id="navbar">
-          <ul>
-          <li><Link to="/contactus">ContactUs</Link></li>
-          <li><Link to="/criminals">Wanted List</Link></li>
-          <li><Link to="/about">About Us</Link></li>
 
+          <ul>
+          <li><Link to="/criminals">Wanted List</Link></li>
+          <li><Link to="/contactus">ContactUs</Link></li>
+          <li><Link to="/about">About Us</Link></li>
           </ul>
         </nav>
 
@@ -29,9 +29,11 @@ function Home() {
           <img src="https://logos-world.net/wp-content/uploads/2021/08/FBI-Logo.png"  alt="FBI Seal" />
           <img src="https://www.shutterstock.com/image-vector/yellow-black-color-line-striped-260nw-2446550797.jpg" alt="FBI Wanted" />
         </div>
+
       </div>
       <footer id="footer">
         <p>&copy; 2025 Federal Reserve Watchlist. All Rights Reserved</p>
+        <p>Developed by Jomo, Angela, Jeremy, Kaynan, Jimmy, Kiama</p>
       </footer>
     </>
   );

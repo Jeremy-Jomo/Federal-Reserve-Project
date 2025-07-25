@@ -5,16 +5,17 @@ import "../App.css";
 const AboutUs = () => {
   const [showMission, setShowMission] = useState(false);
   const [team] = useState([
-    { name: "Angela", role: "About Us Developer" },
-    { name: "James", role: "Frontend Engineer" },
-    { name: "Aisha", role: "Data Analyst" },
-    { name: "Brian", role: "Backend Developer" },
+    { name: "Angela", role: "Frontend Engineer" },
+    { name: "Jeremy", role: "Frontend Engineer" },
+    { name: "kaynan", role: "Frontend Engineer" },
+    { name: "Jimmy", role: "Frontend Engineer" },
+    { name: "Kiama", role: "Frontend Engineer" },
   ]);
 
   return (
     <div className="about-container">
-      <h1>About Our FBI Project</h1>
-      <p>
+      <h1 className="text-centre">About Our FBI Project</h1>
+      <p className="mb-4 p-3">
         Our project explores how the FBI uses modern technology and intelligence
         to access and track criminals. We simulate investigative processes to
         demonstrate how data and digital tools are used in real life.
@@ -31,8 +32,8 @@ const AboutUs = () => {
             To simulate and educate people on the methods used by the FBI to
             maintain national security and bring justice through ethical and
             effective technology.
-            
-            
+
+
           </p>
         </div>
       )}
