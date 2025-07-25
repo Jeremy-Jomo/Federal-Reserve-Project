@@ -1,6 +1,7 @@
 import React from 'react';
 import './LoginPage.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function LoginPage({onSubmit}) {
@@ -53,7 +54,8 @@ function LoginPage({onSubmit}) {
             {error && <p className="text-danger mt-3 text-center">{error}</p>}
           </form>
           <div className="mt-3 text-center">
-            <p>Don't have an account? <a href="/register">Register here</a>.</p>
+            <Link to="/CreateAcc"><p>Don't have an account?</p></Link>
+
             <p><a href="/forgot-password">Forgot Password?</a></p>
           </div>
         </div>
