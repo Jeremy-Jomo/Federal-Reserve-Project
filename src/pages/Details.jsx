@@ -70,8 +70,43 @@ function Details() {
       </p>
       <p>
         <span style={labelStyle}>Details:</span>{" "}
-        {stripHtml(person.details || "No description available")}
+        {stripHtml(person.details || person.description || "Unknown")}
       </p>
+      <p>
+        <span style={labelStyle}>Caution:</span>{" "}
+        {stripHtml(person.caution || "Unknown")}
+      </p>
+
+      <p>
+        <span style={labelStyle}>Date of Birth:</span>{" "}
+        {person.dates_of_birth_used || "Unknown"}
+      </p>
+      <p>
+        <span style={labelStyle}>Place of Birth:</span>{" "}
+        {person.place_of_birth || "Unknown"}
+      </p>
+      <p>
+        <span style={labelStyle}>Weight:</span>{" "}
+        {person.weight || "Unknown"}
+      </p>
+      <p>
+        <span style={labelStyle}>Eye Color:</span>{" "}
+        {person.eyes || "Unknown"}
+      </p>
+      <p>
+        <span style={labelStyle}>Hair Color:</span>{" "}
+        {person.hair || "Unknown"}
+      </p>
+
+      <p>
+        <span style={labelStyle}>Scars & Marks:</span>{" "}
+        {person.scars_and_marks || "Unknown"}
+      </p>
+
+
+
+
+
       <p>
         <span style={labelStyle}>Sex:</span> {person.sex || "Unlisted"}
       </p>
