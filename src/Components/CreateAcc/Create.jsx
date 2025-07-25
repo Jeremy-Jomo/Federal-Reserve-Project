@@ -5,24 +5,34 @@ import { useState } from 'react';
 
 
 
-function CreateAcc({ onSubmit }) {
+function CreateAcc({ onSubmitCreate }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
 
-    function handleCreateAccount(event) {
-        event.preventDefault();
+      function handleCreateAccount(event) {
+    event.preventDefault();
 
-        if (password !== confirmPassword) {
-        setError('Passwords do not match');
-        return;
-        }
-
-        // Here you would typically send the data to your backend
-        onSubmit(event);
-        console.log('Account created');
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
     }
+
+    const newAccount = {
+      username: username.trim(),
+      password: password,
+    };
+
+    onSubmitCreate(newAccount); // send to App.jsx
+    console.log('Account created:', newAccount);
+
+
+    setUsername('');
+    setPassword('');
+    setConfirmPassword('');
+    setError('Account created successfully!');
+  }
 
     return (
         <div className='wrapper'>

@@ -8,6 +8,7 @@ import CriminalsDisplay from './pages/CriminalsDisplay.jsx';
 import AboutUs from './Components/AboutUs.jsx'
 import { useState } from 'react';
 import CreateAcc from './Components/CreateAcc/Create.jsx';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -15,6 +16,14 @@ function App() {
 
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [accounts, setAccounts] = useState([]);
+  const navigate = useNavigate();
+
+  function handleAccountCreate(newAccount) {
+    setAccounts((prev) => [...prev, newAccount]);
+    console.log('Accounts:', accounts);
+    navigate('/'); // Redirect to home after account creation
+  }
 
   return (
     <div>
@@ -24,7 +33,7 @@ function App() {
 
       <Route
       index
-      element={isLoggedIn ? <Navigate to="/home" /> : <LoginPage onSubmit={() => setIsLoggedIn(true)} />}
+      element={isLoggedIn ? <Navigate to="/home" /> : <LoginPage onSubmit={() => setIsLoggedIn(true)} accounts={accounts}/>}
 
      />
 
@@ -35,7 +44,7 @@ function App() {
     }
   />
 
-  <Route path="/CreateAcc" element={<CreateAcc />} />
+  <Route path="/CreateAcc" element={<CreateAcc onSubmitCreate={handleAccountCreate} />} />
 
   <Route
       path='/'
