@@ -33,7 +33,7 @@ function Home() {
       </div>
       <footer id="footer">
         <p>&copy; 2025 Federal Reserve Watchlist. All Rights Reserved</p>
-        <p>Developed by Jomo, Angela, Jeremy, Kaynan, Jimmy, Kiama</p>
+        <p>Developed by Angela, Jeremy, Kaynan, Jimmy, Kiama</p>
       </footer>
     </>
   );
