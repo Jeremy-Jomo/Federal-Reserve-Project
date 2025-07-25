@@ -8,6 +8,7 @@ import CriminalsDisplay from "./pages/CriminalsDisplay.jsx";
 import AboutUs from "./Components/AboutUs.jsx";
 import { useState } from "react";
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
