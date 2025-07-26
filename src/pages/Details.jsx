@@ -102,17 +102,10 @@ function Details() {
         {person.race || "Unknown"}
       </p>
 
-
-
       <p>
         <span style={labelStyle}>Scars & Marks:</span>{" "}
         {person.scars_and_marks || "Unknown"}
       </p>
-
-
-
-
-
       <p>
         <span style={labelStyle}>Sex:</span> {person.sex || "Unlisted"}
       </p>

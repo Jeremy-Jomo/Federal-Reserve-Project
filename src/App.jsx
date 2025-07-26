@@ -9,6 +9,8 @@ import AboutUs from './Components/AboutUs.jsx'
 import { useState } from 'react';
 import CreateAcc from './Components/CreateAcc/Create.jsx';
 import { useNavigate } from 'react-router-dom';
+import Interpol from "./Components/Interpol.jsx"
+import EditCriminal from './Components/EditCriminal.jsx'
 
 
 
@@ -71,6 +73,12 @@ function App() {
       />
 
     </Route>
+      <Route
+      path='interpol'
+      element={<Interpol/>}
+      />
+      <Route path="/edit/:id" element={<EditCriminal />} />
+
     </Routes>
 
     </div>
