@@ -12,6 +12,7 @@ function Home() {
           <li><Link to="/criminals">Wanted List</Link></li>
           <li><Link to="/contactus">ContactUs</Link></li>
           <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/interpol">Interpol</Link></li>
           </ul>
         </nav>
 
