@@ -21,7 +21,7 @@ function Home() {
           AMA NAMNA GANI MY FRIEND! </p>
         </div>
 
-      <main>
+      <main id='main'>
         <Outlet />
       </main>
 

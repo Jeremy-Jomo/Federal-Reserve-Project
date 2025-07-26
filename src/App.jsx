@@ -7,6 +7,7 @@ import Details from "./pages/Details.jsx";
 import CriminalsDisplay from "./pages/CriminalsDisplay.jsx";
 import AboutUs from "./Components/AboutUs.jsx";
 import { useState } from "react";
+import AddCriminal from "./Components/AddCriminal.jsx"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Route path="details/:id" element={<Details />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contactus" element={<ContactUs />} />
+          <Route path="addcriminal" element ={<AddCriminal />}/>
         </Route>
       </Routes>
     </div>

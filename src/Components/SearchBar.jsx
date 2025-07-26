@@ -1,5 +1,6 @@
 // src/components/SearchBar.jsx
 import './SearchBar.css';
+import { Link } from "react-router-dom";
 
 function SearchBar({ searchTerm, setSearchTerm, fieldFilter, setFieldFilter, fieldOptions }) {
   return (
@@ -16,6 +17,7 @@ function SearchBar({ searchTerm, setSearchTerm, fieldFilter, setFieldFilter, fie
           <option key={opt} value={opt}>{opt.toLowerCase().replace(/(^\w|\s\w)/g, m => m.toUpperCase())}</option>
         ))}
       </select>
+      <button><Link to="/addcriminal">Add </Link></button>
     </div>
   );
 }
