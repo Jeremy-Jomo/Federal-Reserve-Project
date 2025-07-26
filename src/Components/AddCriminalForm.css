@@ -1,0 +1,40 @@
+.add-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.add-form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+  width: 60px;
+  height: 40px;
+}
+
+.form-actions button:first-child {
+  background: #28a745;
+  color: white;
+}
+
+.form-actions button:last-child {
+  background: #dc3545;
+  color: white;
+}

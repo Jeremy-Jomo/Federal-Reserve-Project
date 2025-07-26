@@ -1,5 +1,6 @@
 // src/components/SearchBar.jsx
 import './SearchBar.css';
+import { Link } from "react-router-dom";
 
 function SearchBar({ searchTerm, setSearchTerm, fieldFilter, setFieldFilter, fieldOptions }) {
   return (

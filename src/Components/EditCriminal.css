@@ -1,0 +1,38 @@
+.edit-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-actions button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-actions button:first-child {
+  background: #28a745;
+  color: white;
+}
+
+.edit-actions button:last-child {
+  background: #6c757d;
+  color: white;
+}
