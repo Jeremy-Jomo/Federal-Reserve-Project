@@ -53,15 +53,15 @@ function Interpol(){
                     </div>
             </div>
             <div className="ole">
-                <input 
-                type="search" 
+                <input
+                type="search"
                 placeholder="Search by name,gender or crime level..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-input"
                 />
                 <button className="add-btn" onClick={() => setShowForm(true)}>
-                    Add Crimnal
+                    Add Criminal
                 </button>
                 <button className="back-btn"
                     onClick={()=> navigate(-1)}
