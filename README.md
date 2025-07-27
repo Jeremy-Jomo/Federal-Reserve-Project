@@ -83,7 +83,7 @@ npm start
 
 5. **Visit the App**
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](https://federal-reserve-grp1.vercel.app/) in your browser.
 
 ---
 
