@@ -1,0 +1,17 @@
+.footer-container{
+  background-color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-container h3 {
+  font-size: 1.8rem;
+}
+.footer-container a{
+  text-decoration: none;
+  color: rgb(108, 167, 233);
+  font-size: 1.2rem;
+}
+.footer-container a:hover{
+  text-decoration: underline;
+}
