@@ -1,188 +1,108 @@
-# 🕵️‍♂️ Federal Reserve – FBI Most Wanted Web App
+# 🕵️‍♂️ FBI & Interpol Most Wanted Dashboard
 
-**Federal Reserve** is a secure, responsive, single-page application (SPA) built with React. It showcases the FBI's most wanted criminals, complete with search functionality, detailed views, and route protection via a login system.
+A responsive and interactive React web application simulating the operations of the FBI and Interpol in tracking and managing wanted criminals. The project showcases real-time data rendering, CRUD functionality, search filters, and more — all through a modern UI built with React.
 
-> 🚧 This is a Phase 2 project built for learning and demonstration purposes with a fulfilling UI.
+## 📸 Demo
 
----
-
-## 📌 Table of Contents
-
-- [🔐 Features](#-features)
-- [🧩 Project Structure](#-project-structure)
-- [🛠 Tech Stack](#-tech-stack)
-- [📦 Installation](#-installation)
-- [🚀 Running the Project](#-running-the-project)
-- [🧪 Usage](#-usage)
-- [⚙️ Route Protection Logic](#️-route-protection-logic)
-- [🎯 Future Improvements](#-future-improvements)
-- [📄 License](#-license)
-- [🙋 Author](#-author)
+**Live on Vercel:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+**Backend (JSON Server on Render):** [https://json-server-ymmn.onrender.com/criminals](https://json-server-ymmn.onrender.com/criminals)
 
 ---
 
-## 🔐 Features
+## 🚀 Features
 
-- 🔐 **Login Authentication** with hardcoded credentials
-- 📦 **Protected Routes** for secure navigation
-- 🧑‍🤝‍🧑 **Criminals Listing** with FBI-style cards
-- 🔍 **Live Search** for filtering criminals
-- 📃 **Detailed View Pages** for individual profiles
-- 📞 **Contact Us** and ℹ️ **About Us** pages
-- 🎨 Responsive design using **Bootstrap**
-- 🔁 **Automatic redirects** based on login status
-
----
-
-## 🧩 Project Structure
-
-
-Federal_Reserve/
-├── public/
-├── src/
-│ ├── assets/
-│ ├── Components/
-│ │ ├── LoginPage/
-│ │ │ ├── LoginPage.jsx
-│ │ │ └── LoginPage.css
-│ │ ├── AboutUs.jsx
-│ │ ├── ContactUsPage.jsx
-│ │ ├── Home.jsx
-│ │ ├── SearchBar.jsx
-│ │ ├── WantedCard.jsx
-│ ├── pages/
-│ │ ├── Details.jsx
-│ │ └── CriminalsDisplay.jsx
-│ ├── App.jsx
-│ ├── App.css
-│ └── main.jsx
-├── .gitignore
-├── package.json
-├── vite.config.js
-├── vercel.json
-└── README.md
-
-
-## 🛠 Tech Stack
-
-| Tech              | Description                          |
-|------------------|--------------------------------------|
-| React            | Frontend framework                   |
-| Vite             | Build tool for lightning-fast dev    |
-| React Router DOM | Client-side routing                  |
-| Bootstrap        | CSS framework for layout & styling   |
-| CSS              | Custom styling                       |
-| JavaScript       | Application logic                    |
+- 🔎 **Search by Name, Crime, or Gender**
+- 🌍 **Field Office Filtering**
+- 🗃️ **FBI Wanted Cards**
+- 🧑‍💻 **Interpol Criminal Profiles**
+- ➕ **Add, Edit & Delete Criminals (CRUD)**
+- 📄 **Dynamic Routing using React Router**
+- 📦 **JSON-Server Integration (via Render)**
 
 ---
 
-## 📦 Installation
+## 🛠️ Tech Stack
 
-> Ensure you have **Node.js and npm** installed.
+- **Frontend:** React, React Router, JSX, CSS
+- **Backend:** JSON Server (hosted on Render)
+- **Deployment:** Vercel (Frontend), Render (API)
 
-1. Clone the repository:
+---
+
+## 📂 Folder Structure (Simplified)
+
+```
+src/
+│
+├── Components/
+│   ├── AboutUs.jsx
+│   ├── WantedCard.jsx
+│   ├── SearchBar.jsx
+│   └── AddCriminalForm.jsx
+│
+├── pages/
+│   ├── Interpol.jsx
+│   └── EditCriminal.jsx
+│
+├── App.js
+├── index.js
+└── App.css
+```
+
+---
+
+## ⚙️ Installation & Running Locally
+
+1. **Clone the Repo**
 
 ```bash
+git clone https://github.com/your-username/fbi-interpol-app.git
+cd fbi-interpol-app
+```
 
+2. **Install Dependencies**
 
-2. Install dependancies:
-git clone https://github.com/yourusername/federal-reserve.git
-cd federal-reserve
 ```bash
 npm install
+```
 
-3. 🚀 Running the Project
-start server
+3. **Run JSON Server Locally (optional)**
+
+If you want to run the backend locally:
+
 ```bash
-npm run dev
+npm install -g json-server
+json-server --watch db.json --port 5000
+```
 
-open browser and go to [text](http://localhost:5173)
+4. **Start the React App**
 
-## 🧪 Usage
-## 🔑 Login Credentials:
-> Username	Password
-> admin	password123
+```bash
+npm start
+```
 
-1. On app load, the user is shown the Login Page.
+5. **Visit the App**
 
-## 🖼️ Login Page Preview
+Open [http://localhost:3000](https://federal-reserve-grp1.vercel.app/) in your browser.
 
-![Login Page Screenshot](image.png)
+---
 
+## 👨‍👩‍👧‍👦 The Team
 
+- Angela — Frontend Engineer
+- Jeremy — Frontend Engineer
+- Kaynan — Frontend Engineer
+- Jimmy — Frontend Engineer
+- Kiama — Frontend Engineer
 
+---
 
-2. Upon successful login, the app redirects to the Home Page.
-## 🖼️ Project Preview
+## 💡 Inspiration
 
-![Federal Reserve Watchlist Homepage](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-21-15.png)
+This project was built to simulate real-world criminal tracking systems using modern web technologies, while also practicing frontend-backend integration.
 
+---
 
+## 📝 License
 
-
-3.Users can then access:
-
-🔍 /criminals – View list of wanted individuals
-
-
-🧾 /details/:id – View detailed info for each
-
-![Criminal page](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-09.png)
-
-📄 /about – About this platform
-
-![About us page](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-30.png)
-
-📬 /contactus – Contact support or admin
-![Contact us](/home/jomo/Desktop/Phase_2_project/Federal_Reserve/public/screenshots/Screenshot from 2025-07-25 00-33-30.png)
-
-⚙️ Route Protection Logic
-jsx
-Copy
-Edit
- <Route
-  path="/home"
-  element={
-    isLoggedIn ? <Home /> : <Navigate to="/" replace />
-  }
- />
- >If the user is not logged in, they're redirected to the login page.
-
-> After logging in, isLoggedIn becomes true and the app shows protected content.
-
-
-
-##  🎯 Future Improvements
-🔧 Connect to a real backend (Node.js/Express, Firebase, etc.)
-
-📥 Add user registration and password reset
-
-🔒 Replace hardcoded auth with JWT-based authentication
-
-🧩 Add filters (e.g., by region, crime type)
-
-📲 Make the app PWA-ready with offline support
-
-💾 Save login state in localStorage or sessionStorage
-
-📄 License
-This project is licensed under the MIT License.
-
-🙋 Authors
-Jomo
-Kaynan
-Angela
-Jimmy
-Kiama
-🚀 React Developers • Students • Explorers
-
-
-
-
-
-This project was built as part of my learning journey through the Software Engineering Phase 2 program.
-
-
-
-
-
+This project is for educational and demonstration purposes only.
