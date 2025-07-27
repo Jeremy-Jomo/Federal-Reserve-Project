@@ -1,4 +1,3 @@
-// src/pages/Details.jsx
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -120,11 +119,11 @@ function Details() {
       <button
         onClick={() => navigate(-1)}
         style={{
-          padding: "10px",
           backgroundColor: "#3b82f6",
           color: "white",
           border: "none",
           borderRadius: "6px",
+          width:"70px"
         }}
       >
         ← Back

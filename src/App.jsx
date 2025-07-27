@@ -11,6 +11,9 @@ import CreateAcc from './Components/CreateAcc/Create.jsx';
 import { useNavigate } from 'react-router-dom';
 import Interpol from "./Components/Interpol.jsx"
 import EditCriminal from './Components/EditCriminal.jsx'
+import PlaceHolder from './Components/PlaceHolder.jsx';
+import Header from './pages/Header.jsx';
+import Footer from './pages/Footer.jsx'
 
 
 
@@ -30,58 +33,23 @@ function App() {
   return (
     <div>
 
+    <Header/>
 
     <Routes>
-
-      <Route
-      index
-      element={isLoggedIn ? <Navigate to="/home" /> : <LoginPage onSubmit={() => setIsLoggedIn(true)} accounts={accounts}/>}
-
-     />
-
-   <Route
-    path="home"
-    element={
-      isLoggedIn ? <Home /> : <Navigate to="/" replace />
-    }
-  />
-
-  <Route path="/CreateAcc" element={<CreateAcc onSubmitCreate={handleAccountCreate} />} />
-
-  <Route
-      path='/'
-      element={<Home />
-
-      }>
-  <Route
-    path="criminals"
-    element={<CriminalsDisplay />}
-    />
-
-
-    <Route
-      path="details/:id"
-      element={<Details />}
-      />
-    <Route
-      path="about"
-      element={<AboutUs />}
-      />
-      <Route
-      path="contactus"
-      element={<ContactUs />}
-      />
-
+      <Route index element={isLoggedIn ? <Navigate to="/home" /> : <LoginPage onSubmit={() => setIsLoggedIn(true)} accounts={accounts}/>}/>
+      <Route path="home" element={isLoggedIn ? <Home /> : <Navigate to="/" replace />}/>
+      <Route path="/CreateAcc" element={<CreateAcc onSubmitCreate={handleAccountCreate} />}/>
+      <Route path='/' element={<PlaceHolder/>}>
+        <Route index element={<Home.jsx/>}/>
+        <Route path="criminals" element={<CriminalsDisplay />}/>
+        <Route path="details/:id" element={<Details />}/>
+        <Route path="aboutus" element={<AboutUs />}/>
+        <Route path="contactus" element={<ContactUs />}/>
+        <Route path='interpol' element={<Interpol/>}/>
+        <Route path="/edit/:id" element={<EditCriminal />} />
     </Route>
-      <Route
-      path='interpol'
-      element={<Interpol/>}
-      />
-      <Route path="/edit/:id" element={<EditCriminal />} />
-
     </Routes>
-
+    <Footer/>
     </div>
-  )
-}
+)}
 export default App
