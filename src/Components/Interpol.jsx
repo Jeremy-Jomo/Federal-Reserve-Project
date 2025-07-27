@@ -35,6 +35,7 @@ function Interpol(){
     const handleAddCriminal = (newCriminal) => {
         SetInterpolData(prev => [newCriminal, ...prev])
     }
+
     return(
         <div>
             <div className='headercontainer'>
@@ -62,10 +63,16 @@ function Interpol(){
                 <button className="add-btn" onClick={() => setShowForm(true)}>
                     Add Crimnal
                 </button>
+                <button className="back-btn"
+                    onClick={()=> navigate(-1)}
+                >
+                    Back
+                </button>
 
             </div>
 
             <p id="total">showing {filteredCriminals.length} of {interpolDatabase.length}</p>
+
             {showForm && (
             <AddCriminalForm
             onAdd={handleAddCriminal}

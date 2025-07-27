@@ -1,0 +1,22 @@
+.story1{
+  width: 500px;
+  margin-top: 10px;
+}
+.content-wrapper img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+.content-wrapper p{
+  font-size: 1.6rem;
+}
+.content-wrapper h3{
+  color: black;
+  font-size: 1.4rem;
+}
+.content-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
