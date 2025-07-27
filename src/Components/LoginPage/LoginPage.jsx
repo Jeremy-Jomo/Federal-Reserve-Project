@@ -22,7 +22,7 @@ function LoginPage({ onSubmit, accounts }) {
     }
   }
 
-  // ✅ NOW the return is inside the function
+
   return (
     <div className='wrapper'>
       <div className="d-flex justify-content-center align-items-center vh-100">
