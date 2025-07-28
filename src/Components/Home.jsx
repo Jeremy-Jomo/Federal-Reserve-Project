@@ -53,7 +53,7 @@ function Home() {
         <Carousel.Caption>
           <h3>Public Corruption</h3>
           <p>
-            Public corruption is the FBI’s top criminal investigative priority, that includes border corruption, election crimes, international corruption and prison corruption. 
+            Public corruption is the FBI’s top criminal investigative priority, that includes border corruption, election crimes, international corruption and prison corruption.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
