@@ -24,7 +24,7 @@ function CreateAcc({ onSubmitCreate }) {
       password: password,
     };
 
-    onSubmitCreate(newAccount); // send to App.jsx
+    onSubmitCreate(newAccount); 
     console.log('Account created:', newAccount);
 
 

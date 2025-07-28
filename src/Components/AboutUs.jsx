@@ -14,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <div className="about-container">
-      <h1 className="text-centre">About Our FBI Project</h1>
+      <h1>About Our FBI Project</h1>
       <p className="mb-4 p-3">
         Our project explores how the FBI uses modern technology and intelligence
         to access and track criminals. We simulate investigative processes to
