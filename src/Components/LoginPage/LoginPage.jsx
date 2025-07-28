@@ -51,7 +51,6 @@ function LoginPage({ onSubmit, accounts }) {
             <p>
               Create Account <Link to="/CreateAcc">Don't have an account?</Link>
             </p>
-            <p><a href="/forgot-password">Forgot Password?</a></p>
           </div>
         </div>
       </div>
